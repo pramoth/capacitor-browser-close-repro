@@ -1,0 +1,5 @@
+{
+  "appId": "io.github.repro.browserclose",
+  "appName": "Browser Close Repro",
+  "webDir": "dist"
+}

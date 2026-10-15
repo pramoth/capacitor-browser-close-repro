@@ -1,0 +1,27 @@
+{
+  "name": "capacitor-browser-close-repro",
+  "version": "1.0.0",
+  "description": "Minimal repro: @capacitor/browser Browser.close() re-opens the last URL on Android",
+  "type": "module",
+  "keywords": [
+    "capacitor",
+    "mobile"
+  ],
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/browser": "^8.0.5",
+    "@capacitor/core": "^8.5.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.5.3",
+    "vite": "^7.3.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

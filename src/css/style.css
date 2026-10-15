@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 15px;
+}
+main {
+  padding: env(safe-area-inset-top) 16px 16px;
+}
+h1 {
+  font-size: 1.3em;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
+}
+button {
+  padding: 12px;
+  font-size: 1em;
+}
+#counts {
+  font-weight: bold;
+}
+pre {
+  font-size: 12px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+input {
+  width: 5em;
+  font-size: 1em;
+}

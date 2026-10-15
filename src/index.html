@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Browser.close() repro</title>
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Browser.close() repro</h1>
+      <p>
+        Tap <b>1</b>. A Custom Tab opens a URL that immediately redirects to
+        <code>capbrowserrepro://callback</code>. The <code>appUrlOpen</code> listener calls
+        <code>Browser.close()</code>, as an OAuth sign-in / sign-out flow does.
+      </p>
+      <p><b>Expected:</b> one <code>appUrlOpen</code> per tap. <b>Actual (Android):</b> two — <code>Browser.close()</code> opens the same URL again.</p>
+
+      <label>
+        Delay before <code>Browser.close()</code>:
+        <input id="delay" type="number" value="0" min="0" step="10" /> ms
+      </label>
+
+      <div class="buttons">
+        <button id="open-redirect">1. Browser.open(redirecting URL)</button>
+        <button id="open-plain">2. Browser.open(https://capacitorjs.com)</button>
+        <button id="clear">Clear log</button>
+      </div>
+
+      <p id="counts"></p>
+      <pre id="log"></pre>
+    </main>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
